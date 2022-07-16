@@ -6,7 +6,6 @@ import com.ryan.robot.entity.vo.RemindVo;
 import java.util.List;
 
 public interface RemindService {
-    public List<RemindVo> getEveryDayReminds();
 
     public List<RemindVo> getRemindByUserId(String userId);
 }

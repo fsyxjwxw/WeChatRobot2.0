@@ -21,15 +21,15 @@ public class EveryDayTask implements Job {
 
     @Override
     public void execute(JobExecutionContext jobExecutionContext) throws JobExecutionException {
-        WeChatRobot robot = new WeChatRobot();
+        WeChatRobot robot = WeChatRobot.getInstance();
         System.out.println("------------------消息发送------------------");
         System.out.println("发送时间:"+ DateUitls.getDate());
         System.out.println("发送人员:"+name);
         System.out.println("接收人员:"+toName);
         System.out.println("发送内容"+content);
         System.out.println("-------------------------------------------");
-        robot.OpenWeChat();
-        robot.ChooseFriends(toName);
-        robot.SendMessage(content);
+        //发送消息
+        robot.handleMessage(toName, content);
+
     }
 }

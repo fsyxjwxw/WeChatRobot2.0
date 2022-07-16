@@ -21,11 +21,6 @@ public class RemindServiceImpl implements RemindService {
     private RemindMapper remindMapper;
 
     @Override
-    public List<RemindVo> getEveryDayReminds() {
-        return remindMapper.getEveryDayReminds();
-    }
-
-    @Override
     public List<RemindVo> getRemindByUserId(String userId) {
         return remindMapper.getRemindByUserId(userId);
     }

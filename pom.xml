@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.ryan.robot</groupId>
     <artifactId>WeChatRobot</artifactId>
-    <version>0.0.3.test</version>
+    <version>0.2.1</version>
     <name>robot</name>
     <description>robot project for Spring Boot</description>
     <properties>
